@@ -1,0 +1,18 @@
+-> a 2 sec loading screen (looks good)
+->login screen //implement google login, fb login, a local account
+->a seperate signup screen for clarity of code
+
+//signed in
+-> n number of tabs 
+	->main tab showing list of cab pool requests (what details to show here will be 	discussed seperately.
+		-> a + button to create a request // will take u to a seperate activity
+		->a filter button for time and place.
+		->should delete the request as soon as they get enough people.
+		->sorting requests according to time (the earliest ride first)
+	->a page which displays taxi driver numbers and their vehicle name and numbr.
+	
+->activity to create a new request
+	->asks name and contact numbr
+	->pickup point and drop location
+	->number of people(if he already have 1 friend and want to divide the fare more)
+	->time
