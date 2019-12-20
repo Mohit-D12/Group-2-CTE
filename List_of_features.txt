@@ -11,8 +11,12 @@
 		->sorting requests according to time (the earliest ride first)
 	->a page which displays taxi driver numbers and their vehicle name and numbr.
 	
+-> an activity to display the cabpool members details with phone numbers allowing them to call each member or message them over whatsapp
+
 ->activity to create a new request
 	->asks name and contact numbr
 	->pickup point and drop location
 	->number of people(if he already have 1 friend and want to divide the fare more)
 	->time
+
+
