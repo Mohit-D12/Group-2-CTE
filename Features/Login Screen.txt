@@ -1,0 +1,10 @@
+Login Screen -
+
+AppLogo
+AppName
+UserName
+Password
+Forgot Password
+Not a user? Signup
+Login with Google
+Login with Facebook

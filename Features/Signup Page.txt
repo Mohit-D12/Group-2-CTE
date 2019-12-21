@@ -1,0 +1,8 @@
+Signup Page -
+
+Name
+Email Address
+Phone Number
+Password
+Re-enter Password
+Signup
