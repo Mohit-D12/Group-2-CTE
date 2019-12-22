@@ -1,0 +1,33 @@
+Main Screen
+
+is a tabbed activity consisting of 3 tabs : Home , drivers info, Your requests
+
+
+Home tab:
+       						   //for displaying list of cab pools
+A Recycler View Showing list of cabpool Requests;
+A Add Request button				   //will take you to AddRequestActivity
+A Filter Button
+A Sort Button
+
+
+Drivers Info:
+						   //for displaying Phone Numbers and info of some drivers
+A list of some drivers with their 
+	phoneNumbers
+	vehicleNumber
+	vehicletType
+
+
+Your Requests:
+ 						  
+Displays Your cabpool requests in a cardView
+Also displays the cabpools of which you are a part of
+		
+		CardView displays
+			-same as in the cabpool tab
+			-go to the CabPoolInfo for info
+
+	
+	
+	

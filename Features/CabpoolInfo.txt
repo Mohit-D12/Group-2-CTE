@@ -1,0 +1,11 @@
+CabPoolInfo
+   			//Opens when you click on a cab pool request on the MainActivity
+
+Contains
+	Number of people in the cabpool
+	Pickup Point
+	Drop Location
+	Date
+	Time
+	List of People already in cabpool
+	A "Join Now" button

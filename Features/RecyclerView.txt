@@ -1,0 +1,6 @@
+An item of Recycler View will contain 
+	Pickup Point
+	Drop Location
+	Date
+	Time
+	A info button         //Will take you to CabPoolInfo Activity	
