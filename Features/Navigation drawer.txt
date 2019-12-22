@@ -1,0 +1,6 @@
+navgationDrawer
+
+Contains
+	home	 //Opens MainActivity
+	Profile  //Profile page opens
+	About	 //lite

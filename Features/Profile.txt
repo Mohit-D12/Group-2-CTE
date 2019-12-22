@@ -1,0 +1,8 @@
+Profile
+
+Shows
+	Profile picture
+	Name
+	Email
+	Phone Number
+Contains an edit option to edit the same.(converts all the textViews in the page to inputs)

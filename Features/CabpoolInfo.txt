@@ -2,7 +2,7 @@ CabPoolInfo
    			//Opens when you click on a cab pool request on the MainActivity
 
 Contains
-	Number of people in the cabpool
+	Number of people in the cabpool(with details like phone number)
 	Pickup Point
 	Drop Location
 	Date
