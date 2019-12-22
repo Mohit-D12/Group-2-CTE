@@ -3,4 +3,4 @@ An item of Recycler View will contain
 	Drop Location
 	Date
 	Time
-	A info button         //Will take you to CabPoolInfo Activity	
+Adding an itemView.setOnClickListerner to display details of each member of the cabpool in a new activity with phone numbers and whatsapp number of each member with options to call or whatsapp separately
