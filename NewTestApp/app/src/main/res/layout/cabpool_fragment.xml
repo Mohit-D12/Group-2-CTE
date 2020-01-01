@@ -28,6 +28,13 @@
 
     </LinearLayout>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonPanel"
+        android:id="@+id/recyclerView_cabpool"
+        />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/AddButton_Create"
         style="@style/Widget.MaterialComponents.FloatingActionButton"

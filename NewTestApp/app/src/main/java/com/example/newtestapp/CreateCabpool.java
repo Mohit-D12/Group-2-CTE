@@ -1,5 +1,6 @@
 package com.example.newtestapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
@@ -13,7 +14,15 @@ import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.List;
 
 public class CreateCabpool extends AppCompatActivity {
 
@@ -24,7 +33,10 @@ public class CreateCabpool extends AppCompatActivity {
     DatePickerDialog datePickerDialog;
     TimePickerDialog timePickerDialog;
     int day, month, year, hour, minute;
-    String date,time;
+    String date,time,from, to;
+
+    ArrayList<Cabpools> cabpools;
+    DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +49,9 @@ public class CreateCabpool extends AppCompatActivity {
         date_Button = findViewById(R.id.DateButton_Create);
         time_Button = findViewById(R.id.TimeButton_Create);
         add_Button = findViewById(R.id.AddButton_Create);
+
+        cabpools = new ArrayList<>();
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Cabpools");
 
         //code to input date
         date_Button.setOnClickListener(new View.OnClickListener() {
@@ -99,10 +114,28 @@ public class CreateCabpool extends AppCompatActivity {
                 else if(from_EditText.getText().toString().equalsIgnoreCase(to_EditText.getText().toString()))
                     Toast.makeText(getApplicationContext(),"Destination cant be same as Pickup Point",Toast.LENGTH_SHORT).show();
                 else
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                    {
+                        from = from_EditText.getText().toString();
+                        to = to_EditText.getText().toString();
+                                                                    //for uploading data to firebase
+                        cabpools.add(new Cabpools(from,to,date,time));
+                        databaseReference.push().setValue(cabpools).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Void> task) {
+                                        if(task.isSuccessful())
+                                            Toast.makeText(getApplicationContext(),"successful",Toast.LENGTH_SHORT).show();
+                                    }
+                        });
+
+                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                }
             }
         });
 
+
+
     }
+
+
 
 }

@@ -17,9 +17,12 @@ import android.view.View;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.ArrayList;
+
 import static android.os.Build.VERSION_CODES.P;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
     BottomNavigationView bottomNavigationView;
     Fragment defaultFragment;
     DrawerLayout drawerLayout;

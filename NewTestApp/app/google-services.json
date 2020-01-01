@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "224265570409",
+    "firebase_url": "https://poolitnow-35d90.firebaseio.com",
+    "project_id": "poolitnow-35d90",
+    "storage_bucket": "poolitnow-35d90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224265570409:android:c92d9890ede63d2e23baf8",
+        "android_client_info": {
+          "package_name": "com.example.newtestapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224265570409-q42mu92p8jgq57nlbvocrk7s6banu4hm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH5JTIgqd7-zVKOAuhYJRx5k-Mcbrl6MQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224265570409-q42mu92p8jgq57nlbvocrk7s6banu4hm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
